@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import {ButtonsModule} from 'ngx-bootstrap/buttons';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    FormsModule,
+    ButtonsModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
